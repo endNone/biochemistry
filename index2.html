@@ -57,10 +57,10 @@
         </div>
 
         <div style="text-align: center; margin-top: 20px;">
-          <button onclick="location.href='index2.html'"  style="font-size: 16px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">
-            关闭物理引擎
+          <button onclick="location.href='index.html'"  style="font-size: 16px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">
+            打开物理引擎
           </button>
-      </div>
+        </div>
         
 
         <script type="text/javascript">
@@ -104,7 +104,7 @@
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
-                  var options = {"physics": {"barnesHut": {"gravitationalConstant": -80000, "centralGravity": 0.3, "springLength": 95, "springConstant": 0.04, "damping": 0.09, "avoidOverlap": 0}, "minVelocity": 0.75}, "nodes": {"shape": "dot", "scaling": {"min": 10, "max": 30}}, "edges": {"color": {"inherit": true}, "smooth": {"enabled": true}, "arrows": {"to": {"enabled": true, "scaleFactor": 1.0}}}};
+                  var options = {"physics": {"enabled": false, "minVelocity": 0.75}, "nodes": {"shape": "dot", "scaling": {"min": 10, "max": 30}}, "edges": {"color": {"inherit": true}, "smooth": {"enabled": true}, "arrows": {"to": {"enabled": true, "scaleFactor": 1.0}}}};
 
                   
 
